@@ -11256,3 +11256,30 @@ section.resume-section .resume-section-content {
 .custom-anchor:hover:after{
   width: 100%;
 }
+
+.cv-btn-animate {
+  position: relative;
+  transition: all .35s;
+  /* overflow: hidden; */
+}
+.cv-btn-animate span {
+  position: relative;
+  z-index: 2;
+}
+.cv-btn-animate:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(226, 139, 102);
+  transition: all .35s;
+  z-index: 1;
+}
+.cv-btn-animate:hover {
+  color: #fff !important;
+}
+.cv-btn-animate:hover:after {
+  width: 100%;
+}

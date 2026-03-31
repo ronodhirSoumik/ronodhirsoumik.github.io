@@ -80,6 +80,25 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Recents Slider Custom Styles */
+.recents-card .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recents-card:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+
+.recents-navigation button {
+  transition: all 0.2s ease;
+}
+
+.recents-navigation button:hover {
+  background-color: #f8f9fa !important;
+  color: #bd5d38 !important; /* Theme primary color */
+}
+
 *,
 *::before,
 *::after {

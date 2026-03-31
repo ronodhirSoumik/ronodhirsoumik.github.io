@@ -109,6 +109,95 @@
                         <a title="Orcid" class="social-icon" href="https://orcid.org/0000-0003-0905-7102"
                             target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
                     </div>
+
+                    <!-- Recents Slider -->
+                    <div class="recents-section mt-5 w-100 pb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="mb-0"
+                                style="font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: italic; font-weight: 500; font-size: 2rem; color: #6a5a54;">
+                                Recents</h3>
+                            <div class="recents-navigation d-flex gap-2">
+                                <button class="recents-prev btn px-2 py-1"
+                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
+                                        class="fas fa-chevron-left fa-sm"></i></button>
+                                <button class="recents-next btn px-2 py-1"
+                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
+                                        class="fas fa-chevron-right fa-sm"></i></button>
+                            </div>
+                        </div>
+                        <div class="swiper recents-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Card 1: Video -->
+                                <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
+                                    data-type="video"
+                                    data-src="https://drive.google.com/file/d/193rH5vGt73ykWNkICCv9im2YnLWytkt-/view?pli=1"
+                                    data-title="Modernizing Legacy Architectures">
+                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
+                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                                        <div class="col-5 p-3 d-flex align-items-center">
+                                            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop"
+                                                class="img-fluid border" alt="Modernizing Legacy Architectures"
+                                                style="object-fit: cover; height: 120px; width: 100%;">
+                                        </div>
+                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title text-dark mb-2 d-block"
+                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1.1;">
+                                                Modernizing Legacy Architectures</h5>
+                                            <p class="card-text text-muted mb-0 lh-sm"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
+                                                Keynote delivered at the Tech Summit 2023 regarding microservices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 2: Image -->
+                                <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
+                                    data-type="image"
+                                    data-src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+                                    data-title="The Aesthetics of Code">
+                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
+                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                                        <div class="col-5 p-3 d-flex align-items-center">
+                                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+                                                class="img-fluid border" alt="The Aesthetics of Code"
+                                                style="object-fit: cover; height: 120px; width: 100%;">
+                                        </div>
+                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title text-dark mb-2 d-block"
+                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1.1;">
+                                                The Aesthetics of Code</h5>
+                                            <p class="card-text text-muted mb-0 lh-sm"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
+                                                Exploring the fundamental principles and aesthetics in software
+                                                engineering.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card 3: Description Box -->
+                                <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
+                                    data-type="text"
+                                    data-content="<div class='p-3'><p class='lead'>The Evolution of Application Containers</p><p>This is a recent blog post discussing the evolution of containerization and how orchestration tools like Kubernetes are changing the entire software development lifecycle.</p></div>"
+                                    data-title="Evolution of Containers">
+                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
+                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                                        <div class="col-5 p-3 d-flex align-items-center">
+                                            <img src="https://images.unsplash.com/photo-1627443187121-654cb2ec9ac6?q=80&w=2070&auto=format&fit=crop"
+                                                class="img-fluid border" alt="Evolution of Containers"
+                                                style="object-fit: cover; height: 120px; width: 100%;">
+                                        </div>
+                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
+                                            <h5 class="card-title text-dark mb-2 d-block"
+                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1.1;">
+                                                Evolution of Containers</h5>
+                                            <p class="card-text text-muted mb-0 lh-sm"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
+                                                An in-depth writeup on modern orchestration techniques for the cloud.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -510,6 +599,29 @@
                 </section> -->
         </div>
     </div>
+    <!-- Recents Modal -->
+    <div class="modal fade" id="recentsModal" tabindex="-1" aria-labelledby="recentsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 8px; overflow: hidden;">
+                <div class="modal-header border-0 pb-0 position-absolute w-100 z-3" style="top:0; right:0;">
+                    <div class="d-flex justify-content-end w-100 pt-1 pe-1">
+                        <button type="button" class="btn-close bg-white bg-opacity-75 rounded-circle p-2"
+                            data-bs-dismiss="modal" aria-label="Close"
+                            style="box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></button>
+                    </div>
+                </div>
+                <!-- Dynamic Title -->
+                <div class="modal-body p-0 position-relative" id="recentsModalBody"
+                    style="background: #000; min-height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <!-- Dynamic content injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

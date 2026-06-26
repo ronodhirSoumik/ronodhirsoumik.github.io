@@ -39,6 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opensource">Open Source</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
@@ -208,6 +209,272 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Open Source Contribution -->
+            <section class="resume-section" id="opensource">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Open Source Contribution</h2>
+
+                    <!-- Stats Row -->
+                    <div class="row text-center mb-5 gx-4 gy-3">
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 border bg-light h-100">
+                                <h3 id="stat-prs" class="text-primary mb-1"
+                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
+                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
+                                </h3>
+                                <div class="small fw-bold text-uppercase text-muted">PRs Merged</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 border bg-light h-100">
+                                <h3 id="stat-projects" class="text-primary mb-1"
+                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
+                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
+                                </h3>
+                                <div class="small fw-bold text-uppercase text-muted">Projects</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 border bg-light h-100">
+                                <h3 id="stat-stars" class="text-primary mb-1"
+                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
+                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
+                                </h3>
+                                <div class="small fw-bold text-uppercase text-muted">Repo Stars</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 border bg-light h-100">
+                                <h3 id="stat-languages" class="text-primary mb-1"
+                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
+                                    4</h3>
+                                <div class="small fw-bold text-uppercase text-muted">Languages</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Contributions Slider -->
+                    <div class="mb-5 position-relative">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="subheading mb-0 text-dark">Featured Contributions</div>
+                            <div class="opensource-navigation d-flex gap-2">
+                                <button class="opensource-prev btn px-2 py-1"
+                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
+                                        class="fas fa-chevron-left fa-sm"></i></button>
+                                <button class="opensource-next btn px-2 py-1"
+                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
+                                        class="fas fa-chevron-right fa-sm"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper opensource-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 (Cards 1 & 2) -->
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column gap-3">
+                                        <!-- Card 1: Spring Security -->
+                                        <div class="card border-0 rounded-0 shadow-sm"
+                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
+                                            onclick="window.open('https://github.com/spring-projects/spring-security', '_blank');">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h5 class="card-title fw-bold mb-1"
+                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
+                                                        <a href="https://github.com/spring-projects/spring-security"
+                                                            target="_blank" class="text-decoration-none text-dark"
+                                                            onclick="event.stopPropagation();">spring-projects/spring-security</a>
+                                                    </h5>
+                                                    <p class="text-muted small mb-0"><i
+                                                            class="fas fa-star text-warning me-1"></i><span
+                                                            id="stars-spring">7k+</span> stars</p>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end gap-1">
+                                                    <span id="pr-count-spring" class="badge bg-success"
+                                                        style="border-radius: 0;">Merged</span>
+                                                    <div class="d-flex gap-1">
+                                                        <span id="issue-count-spring" class="badge"
+                                                            style="background-color: #bd5d38; border-radius: 0;">Issues</span>
+                                                        <span id="review-count-spring" class="badge bg-info text-dark"
+                                                            style="border-radius: 0;">Reviews</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-3"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">Spring
+                                                Security is a powerful and highly customizable authentication and
+                                                access-control framework.</p>
+
+                                            <div>
+                                                <h6 class="subheading mb-1"
+                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
+                                                </h6>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Issues</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Bugfix</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Deprecated
+                                                    feature removal</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Refactoring</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Code
+                                                    Review</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 2: Flower -->
+                                        <div class="card border-0 rounded-0 shadow-sm"
+                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
+                                            onclick="window.open('https://github.com/flwrlabs/flower', '_blank');">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h5 class="card-title fw-bold mb-1"
+                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
+                                                        <a href="https://github.com/flwrlabs/flower" target="_blank"
+                                                            class="text-decoration-none text-dark"
+                                                            onclick="event.stopPropagation();">flwrlabs/flower</a>
+                                                    </h5>
+                                                    <p class="text-muted small mb-0"><i
+                                                            class="fas fa-star text-warning me-1"></i><span
+                                                            id="stars-flower">3k+</span> stars</p>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end gap-1">
+                                                    <span id="pr-count-flower" class="badge bg-success"
+                                                        style="border-radius: 0;">Merged</span>
+                                                    <div class="d-flex gap-1">
+                                                        <span id="issue-count-flower" class="badge"
+                                                            style="background-color: #bd5d38; border-radius: 0;">Issues</span>
+                                                        <span id="review-count-flower" class="badge bg-info text-dark"
+                                                            style="border-radius: 0;">Reviews</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-3"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">A
+                                                Friendly Federated Learning Framework.</p>
+
+                                            <div>
+                                                <h6 class="subheading mb-1"
+                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
+                                                </h6>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Issues</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Bugfix</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Guides</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 (Card 3) -->
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column gap-3">
+                                        <!-- Card 3: Developer Roadmap -->
+                                        <div class="card border-0 rounded-0 shadow-sm"
+                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
+                                            onclick="window.open('https://github.com/kamranahmedse/developer-roadmap', '_blank');">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h5 class="card-title fw-bold mb-1"
+                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
+                                                        <a href="https://github.com/kamranahmedse/developer-roadmap"
+                                                            target="_blank" class="text-decoration-none text-dark"
+                                                            onclick="event.stopPropagation();">kamranahmedse/developer-roadmap</a>
+                                                    </h5>
+                                                    <p class="text-muted small mb-0"><i
+                                                            class="fas fa-star text-warning me-1"></i><span
+                                                            id="stars-roadmap">270k+</span> stars</p>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end gap-1">
+                                                    <span id="pr-count-roadmap" class="badge bg-success"
+                                                        style="border-radius: 0;">Merged</span>
+                                                    <div class="d-flex gap-1">
+                                                        <span id="issue-count-roadmap" class="badge"
+                                                            style="background-color: #bd5d38; border-radius: 0;">Documentation</span>
+                                                        <span id="review-count-roadmap" class="badge bg-info text-dark"
+                                                            style="border-radius: 0;">Reviews</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="card-text text-muted mb-3"
+                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">
+                                                Interactive roadmaps, guides and other educational content to help
+                                                developers grow in their careers.</p>
+
+                                            <div>
+                                                <h6 class="subheading mb-1"
+                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
+                                                </h6>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
+                                                <span class="badge bg-white text-dark border"
+                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Guides</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Activity Graph -->
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <div class="subheading mb-3 text-dark">Contribution Activity</div>
+                            <div class="border p-2 bg-white shadow-sm text-center" style="border-radius: 0;">
+                                <a href="https://github.com/ronodhirSoumik" target="_blank">
+                                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ronodhirSoumik&theme=github-compact&hide_border=true"
+                                        class="img-fluid w-100" alt="GitHub Activity Graph" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="subheading mb-3 text-dark">Skills Demonstrated</div>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Java</span>
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Python</span>
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Federated
+                                    Learning</span>
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Security</span>
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
+                                <span class="badge px-3 py-2 fs-6 fw-normal"
+                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Code
+                                    Review</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://github.com/ronodhirSoumik" target="_blank"
+                                    class="btn px-4 py-2 text-white"
+                                    style="background-color: #343a40; border-radius: 0; font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
+                                    <i class="fab fa-github me-2"></i>View GitHub Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <hr class="m-0" />

@@ -1,912 +1,1416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description"
-        content="Portfolio of Soumik Sarker — Software Engineer, researcher in System Security, Privacy, and Cloud." />
-    <meta name="author" content="SoumikSarker" />
-    <title>Soumik's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo-resume-one.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
-        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
-        crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/scss/mixins/_utilities.scss" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">         -->
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Soumik Sarker — Senior Software Engineer & Academic Researcher in Systems Security, Blockchain, Privacy, and Cloud." />
+  <meta name="author" content="Soumik Sarker" />
+  <title>Soumik Sarker — Software Engineer & Researcher</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo-resume-one.png" />
+
+  <!-- Google Fonts: EB Garamond (Serif Headings), Inter (Body & UI), JetBrains Mono (Citations & Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons: FontAwesome 6 & Academicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+  <!-- Bootstrap Grid & Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Custom Academic Theme CSS -->
+  <link rel="stylesheet" href="css/academic-theme.css" />
 </head>
 
 <body>
-    <div id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Soumik Sarker</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                        src="assets/img/profile.jpg" alt="Soumik Sarker" /></span>
+
+  <!-- ==========================================================================
+       Sticky Academic Top Navigation Bar
+       ========================================================================== -->
+  <header class="academic-navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-brand-title">
+        <span class="brand-accent">Soumik</span> <span class="brand-primary">Sarker</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu-links" id="nav-menu-links">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#opensource">Open Source</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right-actions">
+        <!-- Theme Switcher (Light/Dark Mode) -->
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" title="Switch Theme"
+          aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- CV Action Link -->
+        <a href="resources/soumik-sarker-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv">
+          <i class="fas fa-file-arrow-down"></i>
+          <span>CV</span>
+        </a>
+
+        <!-- Mobile Nav Hamburger -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-label="Toggle navigation"
+          aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Page Main Wrapper & 2-Column Grid Layout
+       ========================================================================== -->
+  <div class="academic-page-wrapper">
+    <div class="academic-main-grid">
+
+      <!-- ======================================================================
+           LEFT COLUMN: Sticky Profile Sidebar
+           ====================================================================== -->
+      <aside class="academic-sidebar">
+        <!-- Main Profile Card -->
+        <div class="profile-card">
+          <div class="profile-avatar-wrapper">
+            <img src="assets/img/profile.jpg" alt="Soumik Sarker" class="profile-avatar" />
+          </div>
+
+          <h1 class="profile-name">Soumik Sarker</h1>
+          <div class="profile-tagline">Senior Software Engineer · Systems &amp; Security Researcher</div>
+          <div class="profile-affiliation">
+            <!-- <div>Therap (BD) Ltd.</div> -->
+            <!-- <div class="small text-muted">B.Sc. in CSE, SUST</div> -->
+          </div>
+
+          <!-- Pulsing Status Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Open to Research & Eng. Roles</span>
+          </div>
+
+          <!-- Social & Academic Icons -->
+          <div class="sidebar-social-links">
+            <a href="https://scholar.google.com/citations?hl=en&user=d_p_kZQAAAAJ" target="_blank"
+              rel="noopener noreferrer" class="social-btn" title="Google Scholar" aria-label="Google Scholar">
+              <i class="ai ai-google-scholar"></i>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#opensource">Open Source</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Thesis & Projects</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#references">References</a></li> -->
+            <a href="https://orcid.org/0000-0003-0905-7102" target="_blank" rel="noopener noreferrer" class="social-btn"
+              title="ORCID" aria-label="ORCID">
+              <i class="ai ai-orcid"></i>
+            </a>
+            <a href="https://github.com/ronodhirSoumik" target="_blank" rel="noopener noreferrer" class="social-btn"
+              title="GitHub" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/soumik-sarker/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#contact" class="social-btn" title="Email" aria-label="Email"
+              onclick="event.preventDefault(); document.getElementById('email-text').style.display='inline'; this.style.pointerEvents='none';">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <hr class="sidebar-divider" />
+
+          <!-- Meta Information -->
+          <div class="sidebar-meta-list">
+            <div class="meta-item">
+              <i class="fas fa-location-dot"></i>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-envelope-open"></i>
+              <span class="text-secondary" style="font-size: 0.8rem;" id="email-text">ronodhirsoumik [ at ] gmail [ dot
+                ] com</span>
+            </div>
+            <!-- <div class="meta-item">
+              <i class="fas fa-briefcase"></i>
+              <span>4+ Years Industry Exp.</span>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Research Interests Card -->
+        <div class="sidebar-info-card">
+          <div class="sidebar-card-title">
+            <i class="fas fa-compass text-accent"></i>
+            <span>Research Interests</span>
+          </div>
+          <div class="interest-pills">
+            <span class="interest-pill">System Security</span>
+            <span class="interest-pill">Blockchain & Smart Contracts</span>
+            <span class="interest-pill">Federated Learning</span>
+            <span class="interest-pill">Cloud Architectures</span>
+            <span class="interest-pill">Privacy-Preserving Systems</span>
+            <span class="interest-pill">Software Engineering</span>
+            <span class="interest-pill">Natural Language Processing</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ======================================================================
+           RIGHT COLUMN: Main Academic Content
+           ====================================================================== -->
+      <main class="academic-main-content">
+
+        <!-- --------------------------------------------------------------------
+             Section 1: About / Overview
+             -------------------------------------------------------------------- -->
+        <section id="about" class="content-section">
+          <!-- Opportunity Callout Banner -->
+          <div class="callout-banner">
+            <div class="callout-banner-title">
+              <i class="fas fa-graduation-cap text-accent"></i>
+              <span>Seeking Research & Advanced Engineering Opportunities</span>
+            </div>
+            <p class="callout-banner-text">
+              I am a Senior Software Engineer and Researcher with 5 years of production software development
+              experience
+              in high-concurrency systems, security infrastructure, and distributed architectures, alongside an active
+              research trajectory in systems security, cloud privacy,
+              and decentralized systems. Looking for PhD / Research Scientist and Advanced Engineering opportunities.
+            </p>
+            <div class="callout-actions">
+              <a href="resources/soumik-sarker-resume.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn-callout-primary">
+                <i class="fas fa-file-pdf"></i> Download Full CV
+              </a>
+              <a href="https://scholar.google.com/citations?hl=en&user=d_p_kZQAAAAJ" target="_blank"
+                rel="noopener noreferrer" class="btn-callout-secondary">
+                <i class="ai ai-google-scholar"></i> Google Scholar
+              </a>
+              <a href="https://github.com/ronodhirSoumik" target="_blank" rel="noopener noreferrer"
+                class="btn-callout-secondary">
+                <i class="fab fa-github"></i> GitHub Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="section-header-row">
+            <h2 class="section-title">Biography</h2>
+          </div>
+
+          <p class="hero-bio-lead">
+            I am a Computer Science graduate from <strong>Shahjalal University of Science and Technology
+              (SUST)</strong>,
+            currently working as a <strong>Senior Software Engineer at Therap (BD) Ltd.</strong>, a US-based healthcare
+            managerial SaaS company, with 5 years of production engineering experience.
+          </p>
+
+          <p class="hero-bio-text">
+            My professional work focuses on high-concurrency distributed systems, Identity &amp; Access Management (IAM)
+            server architectures, asynchronous messaging topologies, and monolithic server decomposition. At Therap, I
+            work extensively with Java 21 Virtual Threads, Spring Security 6, Hazelcast distributed clustering,
+            RabbitMQ, and WebLogic JMS. I have a sustained research interest in <strong>Systems Security, Cryptography,
+              Federated Learning, and Blockchain-Cloud architectures</strong>.
+          </p>
+
+          <p class="hero-bio-text">
+            I am currently investigating architectures that combine <strong>Machine Learning with Blockchain
+              protocols</strong> to address emerging cryptographic and privacy vulnerabilities in decentralized
+            ecosystems. I have contributed research to venues including <em>IEEE ICAICT</em> and <em>IEEE ICECE</em>,
+            and delivered a technical presentation at the <em>Flower AI Summit 2026</em>. I am also an active
+            open-source contributor to <em>Spring Security</em> and <em>Flower AI</em>.
+          </p>
+
+          <!-- Featured Work / Recent Media Highlights -->
+          <div class="mt-4">
+            <h3 class="academic-heading mb-3" style="font-size: 1.25rem;">Featured Highlights</h3>
+            <div class="row g-3">
+              <!-- Item 1: Flower FedAgent Video -->
+              <div class="col-md-6">
+                <div class="media-card recents-card" data-type="video"
+                  data-src="resources/files/FedAgent_Presentation[FlowerAISummit2026].mp4"
+                  data-title="Flower FedAgent — Flower AI Summit 2026 Presentation">
+                  <div class="media-card-img-wrap">
+                    <img src="assets/img/flowerIcon.jpg" alt="Flower FedAgent" class="media-card-img" />
+                    <div class="media-play-overlay">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div class="media-card-body">
+                    <span class="media-card-tag"><i class="fas fa-video me-1"></i> Summit Presentation</span>
+                    <h4 class="media-card-title">Flower FedAgent</h4>
+                    <p class="media-card-desc">Poster and technical presentation on federated agent integration
+                      delivered at the Flower AI Summit 2026.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Agentic Research Paper Crawler -->
+              <div class="col-md-6">
+                <div class="media-card recents-card" data-type="text" data-title="Agentic Research Paper Crawler"
+                  data-content="&lt;p&gt;Developed an autonomous agentic research paper crawler that accepts natural language queries, reasons over search intents, and fetches structured citations and literature from Google Scholar and arXiv.&lt;/p&gt;&lt;p&gt;&lt;a href='https://dly.to/uiobxj25AoG' target='_blank' class='btn-callout-primary'&gt;Read Publication Article &rarr;&lt;/a&gt; &lt;a href='https://github.com/ronodhirSoumik/agentic-rpaper-crawler' target='_blank' class='btn-callout-secondary ms-2'&gt;View on GitHub &rarr;&lt;/a&gt;&lt;/p&gt;">
+                  <div class="media-card-img-wrap">
+                    <img src="assets/img/rPaperCrawler.png" alt="Agentic Research Assistant" class="media-card-img" />
+                    <div class="media-play-overlay">
+                      <i class="fas fa-file-lines"></i>
+                    </div>
+                  </div>
+                  <div class="media-card-body">
+                    <span class="media-card-tag"><i class="fas fa-microchip me-1"></i> Open Tooling</span>
+                    <h4 class="media-card-title">Agentic Research Paper Crawler</h4>
+                    <p class="media-card-desc">Autonomous crawler interpreting plain language research inquiries to
+                      systematically synthesize relevant literature.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 2: Recent News / Updates
+             -------------------------------------------------------------------- -->
+        <section id="news" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">News & Updates</h2>
+            <span class="section-subtext">Recent announcements & milestones</span>
+          </div>
+
+          <div class="news-feed-list">
+            <div class="news-item">
+              <span class="news-date">[ Apr. 2026 ]</span>
+              <div class="news-text">
+                <span class="news-badge">Talk</span>
+                Delivered technical poster presentation on <strong>Flower FedAgent</strong> at the <em>Flower AI Summit
+                  2026</em>.
+              </div>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">[ Feb. 2026 ]</span>
+              <div class="news-text">
+                <span class="news-badge">Release</span>
+                Open-sourced <strong>Agentic Research Paper Crawler</strong> on GitHub for automated literature
+                discovery.
+              </div>
+            </div>
+
+            <!-- <div class="news-item">
+              <span class="news-date">[ Dec. 2023 ]</span>
+              <div class="news-text">
+                Promoted to <strong>Senior Software Engineer</strong> at Therap (BD) Ltd., leading IAM security
+                architectures, distributed messaging topologies, and monolithic server decomposition.
+              </div>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">[ Jul. 2021 ]</span>
+              <div class="news-text">
+                Joined <strong>Therap (BD) Ltd.</strong> as Software Engineer after graduating with B.Sc. in CSE from
+                SUST.
+              </div>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">[ Feb. 2021 ]</span>
+              <div class="news-text">
+                <span class="news-badge">Paper</span>
+                Co-authored paper on <em>Word Completion & Sequence Prediction in Bangla Language</em> published at
+                <strong>2nd ICAICT (IEEE)</strong>.
+              </div>
+            </div>
+
+            <div class="news-item">
+              <span class="news-date">[ Dec. 2020 ]</span>
+              <div class="news-text">
+                <span class="news-badge">Paper</span>
+                Co-authored paper <em>A Survey on Blockchain & Cloud Integration</em> presented and published at
+                <strong>23rd ICECE (IEEE)</strong>.
+              </div>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 2.5: Research Interests & Projects
+             -------------------------------------------------------------------- -->
+        <section id="research" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Research</h2>
+            <span class="section-subtext">Areas of interest &amp; active research</span>
+          </div>
+
+          <!-- Research Interests Overview -->
+          <div class="research-overview">
+            <p class="hero-bio-text">
+              My research sits at the intersection of <strong>Systems Security</strong>, <strong>Blockchain &amp;
+                Decentralized Protocols</strong>, and <strong>Privacy-Preserving Machine Learning</strong>.
+              I am particularly interested in how cryptographic guarantees can be embedded into distributed and
+              federated systems — and how ML can be weaponized or defended against in such settings.
+            </p>
+          </div>
+
+          <!-- Research Areas Grid -->
+          <div class="research-areas-grid">
+
+            <div class="research-area-card">
+              <div class="research-area-icon">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div class="research-area-body">
+                <h4 class="research-area-title">Systems Security &amp; Cryptography</h4>
+                <p class="research-area-desc">
+                  Investigating access control enforcement models, cryptographic primitives for secure multi-party
+                  computation, and vulnerability analysis in distributed system architectures.
+                </p>
+              </div>
+            </div>
+
+            <div class="research-area-card">
+              <div class="research-area-icon">
+                <i class="fas fa-link"></i>
+              </div>
+              <div class="research-area-body">
+                <h4 class="research-area-title">Blockchain &amp; Decentralized Architectures</h4>
+                <p class="research-area-desc">
+                  Exploring Blockchain-as-a-Service (BaaS) delivery models, smart contract security, consensus
+                  offloading mechanisms, and blockchain-cloud integration paradigms.
+                </p>
+              </div>
+            </div>
+
+            <div class="research-area-card">
+              <div class="research-area-icon">
+                <i class="fas fa-share-nodes"></i>
+              </div>
+              <div class="research-area-body">
+                <h4 class="research-area-title">Federated Learning &amp; Privacy</h4>
+                <p class="research-area-desc">
+                  Building and contributing to federated learning frameworks (Flower AI) with a focus on differential
+                  privacy, model aggregation security, and agentic FL orchestration.
+                </p>
+              </div>
+            </div>
+
+            <div class="research-area-card">
+              <div class="research-area-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="research-area-body">
+                <h4 class="research-area-title">Cloud Security &amp; Privacy</h4>
+                <p class="research-area-desc">
+                  Studying privacy-preserving data handling in cloud environments, tenant isolation, data integrity
+                  auditing, and secure serverless architecture patterns.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Active Research Note -->
+          <div class="research-note">
+            <i class="fas fa-flask text-accent"></i>
+            <span>I am actively seeking <strong>PhD / Research Scientist</strong> positions to pursue these research
+              directions with academic depth. Please reach out if you have opportunities or collaboration ideas.</span>
+          </div>
+
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 3: Publications
+             -------------------------------------------------------------------- -->
+        <section id="publications" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Publications</h2>
+            <span class="section-subtext">Peer-reviewed conference papers & surveys</span>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="pub-filter-tabs">
+            <button class="pub-filter-btn active" data-filter="all">All (3)</button>
+            <button class="pub-filter-btn" data-filter="conference">Conferences (2)</button>
+            <button class="pub-filter-btn" data-filter="survey">Surveys & Preprints (1)</button>
+          </div>
+
+          <div class="pub-list">
+            <!-- Publication 1 -->
+            <article class="pub-card" data-category="conference">
+              <div class="pub-header-row">
+                <span class="pub-number-badge">[ 1 ]</span>
+                <h3 class="pub-title">
+                  Word Completion and Sequence Prediction in Bangla Language Using Trie and a Hybrid Approach of
+                  Sequential LSTM and N-gram
+                </h3>
+              </div>
+
+              <div class="pub-authors">
+                <span class="pub-author-highlight">Soumik Sarker</span>, Md. Ekramul Islam, Jillur Rahman Saurav, Md
+                Mahadi Hasan Nahid
+              </div>
+
+              <div class="pub-venue-row">
+                <span class="pub-venue-badge">IEEE · ICAICT 2020</span>
+                <span class="pub-venue-name">2nd International Conference on Advanced Information and Communication
+                  Technology (ICAICT)</span>
+                <span>(Published: Feb 2021)</span>
+              </div>
+
+              <div class="pub-keywords">
+                <span class="pub-keyword-pill">Bangla NLP</span>
+                <span class="pub-keyword-pill">Sequence Prediction</span>
+                <span class="pub-keyword-pill">Trie Architecture</span>
+                <span class="pub-keyword-pill">Sequential LSTM</span>
+                <span class="pub-keyword-pill">N-gram Models</span>
+                <span class="pub-keyword-pill">Encoder-Decoder</span>
+              </div>
+
+              <div class="pub-actions">
+                <a href="https://ieeexplore.ieee.org/document/9333518" target="_blank" rel="noopener noreferrer"
+                  class="pub-btn">
+                  <i class="fas fa-external-link-alt"></i> IEEE Paper
+                </a>
+                <a href="https://drive.google.com/file/d/1qval4JegiEJzpICaUwGPdF11WT8uDm0N/view" target="_blank"
+                  rel="noopener noreferrer" class="pub-btn">
+                  <i class="fas fa-chalkboard-user"></i> Presentation
+                </a>
+                <button type="button" class="pub-btn btn-toggle-abstract" data-target="abstract-pub1">
+                  <i class="fas fa-align-left"></i> Abstract
+                </button>
+                <button type="button" class="pub-btn btn-toggle-bibtex" data-target="bibtex-pub1">
+                  <i class="fas fa-quote-right"></i> BibTeX
+                </button>
+              </div>
+
+              <!-- Abstract Drawer -->
+              <div id="abstract-pub1" class="pub-drawer">
+                <p class="pub-abstract-text">
+                  Text composition efficiency in low-resource and morphologically rich scripts such as Bangla often
+                  suffers from cumbersome keyboard navigation.
+                  This paper introduces a hybrid sequence prediction and word completion pipeline fusing hierarchical
+                  Trie search structures with sequential Long
+                  Short-Term Memory (LSTM) recurrent networks and N-gram statistical models. Evaluated across
+                  large-scale Bangla text corpora, the hybrid system
+                  demonstrates significant improvements in keystroke savings and prediction accuracy compared to
+                  standalone statistical or neural baselines.
+                </p>
+              </div>
+
+              <!-- BibTeX Drawer -->
+              <div id="bibtex-pub1" class="pub-drawer">
+                <div class="pub-bibtex-block">
+                  <button type="button" class="btn-copy-bibtex" aria-label="Copy BibTeX citation"><i
+                      class="fas fa-copy"></i> Copy</button>
+                  <pre class="pub-bibtex-code">@inproceedings{sarker2020word,
+  author    = {Sarker, Soumik and Islam, Md. Ekramul and Saurav, Jillur Rahman and Nahid, Md Mahadi Hasan},
+  title     = {Word Completion and Sequence Prediction in Bangla Language Using Trie and a Hybrid Approach of Sequential LSTM and N-gram},
+  booktitle = {2020 2nd International Conference on Advanced Information and Communication Technology (ICAICT)},
+  year      = {2020},
+  pages     = {174--179},
+  publisher = {IEEE},
+  doi       = {10.1109/ICAICT51780.2020.9333518}
+}</pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Publication 2 -->
+            <article class="pub-card" data-category="survey">
+              <div class="pub-header-row">
+                <span class="pub-number-badge">[ 2 ]</span>
+                <h3 class="pub-title">
+                  A Survey on Blockchain & Cloud Integration
+                </h3>
+              </div>
+
+              <div class="pub-authors">
+                <span class="pub-author-highlight">Soumik Sarker</span>, Arnob Kumar Saha, Md Sadek Ferdous
+              </div>
+
+              <div class="pub-venue-row">
+                <span class="pub-venue-badge">IEEE · ICECE 2020</span>
+                <span class="pub-venue-name">11th International Conference on Electrical and Computer Engineering
+                  (ICECE)</span>
+                <span>(Published: Mar 2021)</span>
+              </div>
+
+              <div class="pub-keywords">
+                <span class="pub-keyword-pill">Blockchain</span>
+                <span class="pub-keyword-pill">Cloud Computing</span>
+                <span class="pub-keyword-pill">Blockchain-as-a-Service (BaaS)</span>
+                <span class="pub-keyword-pill">Decentralized Security</span>
+                <span class="pub-keyword-pill">Access Control</span>
+              </div>
+
+              <div class="pub-actions">
+                <a href="https://ieeexplore.ieee.org/document/9392748" target="_blank" rel="noopener noreferrer"
+                  class="pub-btn">
+                  <i class="fas fa-external-link-alt"></i> IEEE Paper
+                </a>
+                <a href="https://drive.google.com/file/d/193rH5vGt73ykWNkICCv9im2YnLWytkt-/view" target="_blank"
+                  rel="noopener noreferrer" class="pub-btn">
+                  <i class="fas fa-chalkboard-user"></i> Presentation
+                </a>
+                <button type="button" class="pub-btn btn-toggle-abstract" data-target="abstract-pub2">
+                  <i class="fas fa-align-left"></i> Abstract
+                </button>
+                <button type="button" class="pub-btn btn-toggle-bibtex" data-target="bibtex-pub2">
+                  <i class="fas fa-quote-right"></i> BibTeX
+                </button>
+              </div>
+
+              <!-- Abstract Drawer -->
+              <div id="abstract-pub2" class="pub-drawer">
+                <p class="pub-abstract-text">
+                  Cloud computing provides on-demand computational scalability but raises centralized vulnerabilities in
+                  data integrity, auditing,
+                  and tenant trust. Conversely, decentralized blockchain networks enforce tamper-evident consensus at
+                  the cost of processing throughput
+                  and storage capacity. This survey systematically reviews integration architectures uniting blockchain
+                  and cloud computing paradigms,
+                  analyzing Blockchain-as-a-Service (BaaS) delivery models, consensus offloading mechanisms, privacy
+                  preservation schemes, and open challenges.
+                </p>
+              </div>
+
+              <!-- BibTeX Drawer -->
+              <div id="bibtex-pub2" class="pub-drawer">
+                <div class="pub-bibtex-block">
+                  <button type="button" class="btn-copy-bibtex" aria-label="Copy BibTeX citation"><i
+                      class="fas fa-copy"></i> Copy</button>
+                  <pre class="pub-bibtex-code">@inproceedings{sarker2020survey,
+  author    = {Sarker, Soumik and Saha, Arnob Kumar and Ferdous, Md Sadek},
+  title     = {A Survey on Blockchain \& Cloud Integration},
+  booktitle = {2020 11th International Conference on Electrical and Computer Engineering (ICECE)},
+  year      = {2020},
+  pages     = {403--406},
+  publisher = {IEEE},
+  doi       = {10.1109/ICECE51571.2020.9392748}
+}</pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Publication 3 -->
+            <article class="pub-card" data-category="conference">
+              <div class="pub-header-row">
+                <span class="pub-number-badge">[ 3 ]</span>
+                <h3 class="pub-title">
+                  Deep Learning Approach Combining Lightweight CNN Architecture with Transfer Learning: An Automatic
+                  Approach for the Detection and Recognition of Bangladeshi Banknotes
+                </h3>
+              </div>
+
+              <div class="pub-authors">
+                Ali Hasan Md. Linkon, Md. Mahir Labib, Faisal Haque Bappy, <span class="pub-author-highlight">Soumik
+                  Sarker</span>, Marium-E Jannat, Md Saiful Islam
+              </div>
+
+              <div class="pub-venue-row">
+                <span class="pub-venue-badge">IEEE · ICECE 2020</span>
+                <span class="pub-venue-name">11th International Conference on Electrical and Computer Engineering
+                  (ICECE)</span>
+                <span>(Published: Mar 2021)</span>
+              </div>
+
+              <div class="pub-keywords">
+                <span class="pub-keyword-pill">Banknote Recognition</span>
+                <span class="pub-keyword-pill">Lightweight CNN</span>
+                <span class="pub-keyword-pill">Transfer Learning</span>
+                <span class="pub-keyword-pill">Computer Vision</span>
+                <span class="pub-keyword-pill">Edge Inference</span>
+              </div>
+
+              <div class="pub-actions">
+                <a href="https://ieeexplore.ieee.org/abstract/document/9393113" target="_blank"
+                  rel="noopener noreferrer" class="pub-btn">
+                  <i class="fas fa-external-link-alt"></i> IEEE Paper
+                </a>
+                <button type="button" class="pub-btn btn-toggle-abstract" data-target="abstract-pub3">
+                  <i class="fas fa-align-left"></i> Abstract
+                </button>
+                <button type="button" class="pub-btn btn-toggle-bibtex" data-target="bibtex-pub3">
+                  <i class="fas fa-quote-right"></i> BibTeX
+                </button>
+              </div>
+
+              <!-- Abstract Drawer -->
+              <div id="abstract-pub3" class="pub-drawer">
+                <p class="pub-abstract-text">
+                  Automated currency recognition for individuals with visual impairments requires high classification
+                  precision paired with low computational latency
+                  suitable for edge and mobile environments. This study develops a lightweight convolutional neural
+                  network leveraging transfer learning and optimized
+                  feature extraction layers to detect and recognize Bangladeshi currency notes under varied lighting,
+                  angles, and physical wear conditions.
+                </p>
+              </div>
+
+              <!-- BibTeX Drawer -->
+              <div id="bibtex-pub3" class="pub-drawer">
+                <div class="pub-bibtex-block">
+                  <button type="button" class="btn-copy-bibtex" aria-label="Copy BibTeX citation"><i
+                      class="fas fa-copy"></i> Copy</button>
+                  <pre class="pub-bibtex-code">@inproceedings{linkon2020deep,
+  author    = {Linkon, Ali Hasan Md. and Labib, Md. Mahir and Bappy, Faisal Haque and Sarker, Soumik and Jannat, Marium-E and Islam, Md Saiful},
+  title     = {Deep Learning Approach Combining Lightweight CNN Architecture with Transfer Learning: An Automatic Approach for the Detection and Recognition of Bangladeshi Banknotes},
+  booktitle = {2020 11th International Conference on Electrical and Computer Engineering (ICECE)},
+  year      = {2020},
+  pages     = {407--410},
+  publisher = {IEEE},
+  doi       = {10.1109/ICECE51571.2020.9393113}
+}</pre>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 4: Professional & Academic Experience
+             -------------------------------------------------------------------- -->
+        <section id="experience" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Experience</h2>
+            <span class="section-subtext">Industry engineering & academic research appointments</span>
+          </div>
+
+          <div class="academic-timeline">
+            <!-- Experience Item 1: Therap -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">Senior Software Engineer</h3>
+                  <span class="timeline-date-badge">Jul. 2021 — Present</span>
+                </div>
+                <div class="timeline-org">
+                  <a href="https://therapbd.com/" target="_blank" rel="noopener noreferrer">
+                    Therap (BD) Ltd. <i class="fas fa-arrow-up-right-from-square fa-xs"></i>
+                  </a>
+                  <span class="text-muted">· Dhaka, Bangladesh (US Healthcare Managerial Solutions SaaS)</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Architected and implemented enterprise healthcare management modules catering to thousands of
+                    healthcare providers and strict compliance frameworks.
+                  </li>
+                  <li>
+                    Spearheaded major framework and system upgrade migrations across enterprise modules, resolving
+                    technical debt and establishing automated regression guardrails.
+                  </li>
+                  <li>
+                    Engineered flexible, secure data exchange pipelines and REST APIs enabling bidirectional integration
+                    with external health information networks.
+                  </li>
+                  <li>
+                    Conducted code reviews, contributed to architecture design reviews, and mentored junior software
+                    engineers on clean design patterns and testing strategies.
+                  </li>
                 </ul>
-                <div class="d-lg-none w-100 text-center mt-4 mb-3">
-                    <a class="btn bg-white py-2 px-3 mb-2 fw-bold cv-btn-animate"
-                        href="resources/soumik-sarker-resume.pdf" target="_blank" rel="noopener noreferrer"
-                        style="border-radius: 0; font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.05rem; color: #495057; font-size:  1.25rem; width: 80%;">
-                        <span>MY RESUME</span></a>
-                    <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.05rem;"
-                        class="fw-bold pb-2">
-                        <i class="fas fa-history me-1"></i> LAST UPDATED: July 2026
-                    </div>
+
+                <!-- Project 1 -->
+                <!-- <div class="mt-3 mb-2">
+                  <strong style="font-size: 0.88rem; color: var(--text-primary);"><i
+                      class="fas fa-server text-accent me-1"></i> Core Monolithic Server &amp; Microservice
+                    Management</strong>
+                  <ul class="timeline-bullets mt-1 mb-2">
+                    <li>
+                      Engineered high-concurrency data streaming and memory-safe processing using <strong>Spring MVC,
+                        Spring Data JPA, EJB 3.x, Java 21 Virtual Threads, and Hibernate</strong>; built automated SFTP
+                      file-exchange pipelines with OpenCSV and JSch; configured cache management with Hazelcast.
+                    </li>
+                    <li>
+                      Designed a cluster-aware leader-election mechanism using <strong>Hazelcast cluster membership
+                        states</strong> to maintain high-volume background scheduled tasks.
+                    </li>
+                    <li>
+                      Re-architectured core synchronous flows into an asynchronous Transactional Outbox pattern using
+                      <strong>RabbitMQ</strong>.
+                    </li>
+                    <li>
+                      Built high-performance messaging topologies using <strong>WebLogic JMS</strong> Uniform
+                      Distributed Destinations and <strong>Oracle RAC</strong> Active GridLink connection pooling.
+                    </li>
+                    <li>
+                      Actively executed major system upgradations of JDK, Spring, and Bootstrap versions, alongside
+                      monolithic server decomposition.
+                    </li>
+                    <li>
+                      Experimented with Datadog, Prometheus, and Grafana for robust telemetry visualization and
+                      distributed tracing.
+                    </li>
+                  </ul>
+                </div> -->
+
+                <!-- Project 2 -->
+                <!-- <div class="mb-2">
+                  <strong style="font-size: 0.88rem; color: var(--text-primary);"><i
+                      class="fas fa-shield-halved text-accent me-1"></i> Identity &amp; Access Management (IAM)
+                    Server</strong>
+                  <ul class="timeline-bullets mt-1 mb-2">
+                    <li>
+                      Architected stateless authentication and authorization services integrating <strong>Spring
+                        Security 6, passwordless Passkeys (WebAuthn), dynamic SAML 2.0 SSO, JWT token verification,
+                        Rule-based Guardrails</strong>, and cryptographic techniques.
+                    </li>
+                    <li>
+                      Implemented a custom <strong>Aspect-Oriented Programming (AOP)</strong> security framework
+                      intercepting controller-level invocations to enforce reflection-based access control management.
+                    </li>
+                    <li>
+                      Engineered <strong>cluster-wide rate-limiting</strong> utilities backed by Hazelcast to protect
+                      public REST APIs against brute-force attacks and token abuse.
+                    </li>
+                  </ul>
+                </div> -->
+
+                <!-- Project 3 -->
+                <!-- <div class="mb-2">
+                  <strong style="font-size: 0.88rem; color: var(--text-primary);"><i
+                      class="fas fa-laptop-code text-accent me-1"></i> Frontend Server &amp; Web Components
+                    Development</strong>
+                  <ul class="timeline-bullets mt-1 mb-2">
+                    <li>
+                      Led strategic migration of coupled Java Servlet Page (JSP)-based monolithic views into an
+                      independent version-controlled npm workspace with <strong>React 18, TypeScript, Vite, Axios, and
+                        Sitemesh</strong>.
+                    </li>
+                    <li>
+                      Developed custom web components with standard features while maintaining <strong>WCAG AA</strong>
+                      global website accessibility compliance.
+                    </li>
+                    <li>
+                      Implemented <strong>XSS &amp; CSRF protection, CSP, custom Jackson sanitizers, and PGP/HMAC
+                        encryption</strong> for secure client-server data transfers.
+                    </li>
+                  </ul>
+                </div> -->
+
+                <div class="timeline-tags mt-3">
+                  <span class="tech-tag">Java 21 (Virtual Threads)</span>
+                  <span class="tech-tag">Spring Security 6</span>
+                  <span class="tech-tag">Spring Boot / MVC</span>
+                  <span class="tech-tag">Hazelcast</span>
+                  <span class="tech-tag">RabbitMQ</span>
+                  <span class="tech-tag">WebLogic JMS</span>
+                  <span class="tech-tag">Oracle RAC</span>
+                  <span class="tech-tag">Passkeys (WebAuthn)</span>
+                  <span class="tech-tag">SAML 2.0 / JWT</span>
+                  <span class="tech-tag">React 18</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Datadog / Prometheus</span>
                 </div>
+              </div>
             </div>
-            <div class="d-none d-lg-block position-absolute bottom-0 w-100 text-center mb-4 pb-2">
-                <a class="btn bg-white py-2 px-3 mb-2 fw-bold cv-btn-animate" href="resources/soumik-sarker-resume.pdf"
-                    target="_blank" rel="noopener noreferrer"
-                    style="border-radius: 0; font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.05rem; color: #495057; font-size: 1.25rem; width: 80%;">
-                    <span>MY RESUME</span></a>
-                <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.05rem;"
-                    class="fw-bold">
-                    <i class="fas fa-history me-1"></i> LAST UPDATED: July 2026
+
+            <!-- Experience Item 2: BRAC HNPP -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">Developer &amp; Content Designer</h3>
+                  <span class="timeline-date-badge">Oct. 2019 — Nov. 2020</span>
                 </div>
+                <div class="timeline-org">
+                  <a href="https://www.brac.net/program/health-nutrition-and-population/" target="_blank"
+                    rel="noopener noreferrer">
+                    BRAC HNPP Application Development <i class="fas fa-arrow-up-right-from-square fa-xs"></i>
+                  </a>
+                  <span class="text-muted">· Brac Center, Dhaka (Contractual · $4.3k USD)</span>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li>
+                    Developed a <strong>learning and trainee management tool</strong> for health workers under BRAC
+                    Health, Nutrition and Population Programme (HNPP) via a 4.3k USD contract.
+                  </li>
+                  <li>
+                    Maintained the production application across community health centers (comprising 25% of the user
+                    base); currently live with more than <strong>3k+ users</strong>.
+                  </li>
+                  <li>
+                    Collaborated in a cross-functional environment and synthesized client requirements through multiple
+                    on-site field visits.
+                  </li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Android</span>
+                  <span class="tech-tag">Volley</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">Git</span>
+                </div>
+              </div>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        <span class="text-primary">Soumik </span>
-                        Sarker
-                    </h1>
-                    <div class="subheading mb-5">
-                        Dhaka · Bangladesh
-                        <br />
-                        <span id="email-display">ronodhirsoumik[@]gmail[dot]com</span>
-                    </div>
-                    <p class="lead mb-5">
-                        I am a CS graduate and currently working as Software Developer for more than 4 years.
-                        I love to engage in any sorts of group activities and solving problems.
-                        <br />
-                        <br />My research interests are Software Engineering, System Security, Privacy and Cloud.
-                        <b>Currently juggling with some ideas around
-                            Machine learning integrated Blockchain to shield Cryptographic Security threats that Quantum
-                            Computing can cause in near future.</b>
-                    </p>
-                    <!-- <ul>
-                            <li>Ensuring Security in Federated Learning(FL) Models</li>
-                            <li>Efficient Query Processing using RAG-integrated FL</li>
-                        </ul>    -->
-                    <div class="social-icons">
-                        <a title="LinkedIn" class="social-icon" href="https://www.linkedin.com/in/soumik-sarker/"
-                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                        <a title="Github" class="social-icon" href="https://github.com/ronodhirSoumik" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a title="Google Scholar" class="social-icon"
-                            href="https://scholar.google.com/citations?hl=en&user=d_p_kZQAAAAJ" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>
-                        <a title="Orcid" class="social-icon" href="https://orcid.org/0000-0003-0905-7102"
-                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
-                    </div>
 
-                    <!-- Recents Slider -->
-                    <div class="recents-section mt-5 w-100 pb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h3 class="mb-0"
-                                style="font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: italic; font-weight: 500; font-size: 2rem; color: #6a5a54;">
-                                <!-- Recents -->
-                            </h3>
-                            <div class="recents-navigation d-flex gap-2">
-                                <button class="recents-prev btn px-2 py-1"
-                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
-                                        class="fas fa-chevron-left fa-sm"></i></button>
-                                <button class="recents-next btn px-2 py-1"
-                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
-                                        class="fas fa-chevron-right fa-sm"></i></button>
-                            </div>
-                        </div>
-                        <div class="swiper recents-swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Card 1: Video -->
-                                <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
-                                    data-type="video" data-src="resources/files/FedAgent_Presentation[FlowerAISummit2026].mp4"
-                                    data-title="flowerFedAgent">
-                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
-                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                                        <div class="col-5 p-3 d-flex align-items-center">
-                                            <img src="assets/img/flowerIcon.jpg" class="img-fluid border"
-                                                alt="flowerFramework"
-                                                style="object-fit: cover; height: 120px; width: 100%;">
-                                        </div>
-                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-dark mb-2 d-block"
-                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.35rem; line-height: 1.1;">
-                                                Flower FedAgent</h5>
-                                            <p class="card-text text-muted mb-0 lh-sm"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
-                                                Poster Presentation delivered at the <b>Flower AI Summit 2026</b>.
-                                                <br />
-                                                15-16 April 2026.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 3: Description Box -->
-                                <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
-                                    data-type="text" data-content="<div class='p-3'><p class='lead'>
-                                        Agentic Research Assistant</p><p>This is a recent blog post where I shared one of github projects. I created an agentic research paper crawler that will understand plain 
-                                            query and fetch relevant research work from Google Scholar.
-                                        <br />
-                                        <a href='https://dly.to/uiobxj25AoG' target='_blank'>View the Post</a>
-                                        <br />
-                                        <a href='https://github.com/ronodhirSoumik/agentic-rpaper-crawler' target='_blank'>View github project</a>
-                                    </p>
-                                </div>" data-title="Agentic Research Assistant">
-                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
-                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                                        <div class="col-5 p-3 d-flex align-items-center">
-                                            <img src="assets/img/rPaperCrawler.png" class="img-fluid border"
-                                                alt="Agentic Research Assistant"
-                                                style="object-fit: cover; height: 120px; width: 100%;">
-                                        </div>
-                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-dark mb-2 d-block"
-                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 500; font-size: 1.35rem; line-height: 1.1;">
-                                                Agentic Research Assistant</h5>
-                                            <p class="card-text text-muted mb-0 lh-sm"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
-                                                Created an <b>agentic research paper crawler</b> that will understand
-                                                plain query and fetch relevant research work from Google Scholar.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 2: Image -->
-                                <!-- <div class="swiper-slide list-group-item-action recents-card" style="cursor: pointer;"
-                                    data-type="image" data-src="https://dly.to/uiobxj25AoG"
-                                    data-title="Agentic Research Assistant">
-                                    <div class="card h-100 border-0 rounded-0 flex-row align-items-stretch"
-                                        style="background-color: #f6f6f6; transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                                        <div class="col-5 p-3 d-flex align-items-center">
-                                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
-                                                class="img-fluid border" alt="The Aesthetics of Code"
-                                                style="object-fit: cover; height: 120px; width: 100%;">
-                                        </div>
-                                        <div class="col-7 p-3 ps-0 d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-dark mb-2 d-block"
-                                                style="font-family: 'Saira Extra Condensed', sans-serif; font-weight: 700; font-size: 1.35rem; line-height: 1.1;">
-                                                Agentic Research Assistant</h5>
-                                            <p class="card-text text-muted mb-0 lh-sm"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500;">
-                                                Created a agentic research paper crawler that will understand plain
-                                                query and fetch relevant research work from Google Scholar </p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
+            <!-- Experience Item 3: SUST Research Center -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">Research Assistant &amp; Developer</h3>
+                  <span class="timeline-date-badge">Jul. 2019 — Jun. 2020</span>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Open Source Contribution -->
-            <section class="resume-section" id="opensource">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Open Source Contribution</h2>
-
-                    <!-- Stats Row -->
-                    <div class="row text-center mb-5 gx-4 gy-3">
-                        <div class="col-6 col-md-3">
-                            <div class="p-3 border bg-light h-100">
-                                <h3 id="stat-prs" class="text-primary mb-1"
-                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
-                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
-                                </h3>
-                                <div class="small fw-bold text-uppercase text-muted">PRs Merged</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="p-3 border bg-light h-100">
-                                <h3 id="stat-projects" class="text-primary mb-1"
-                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
-                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
-                                </h3>
-                                <div class="small fw-bold text-uppercase text-muted">Projects</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="p-3 border bg-light h-100">
-                                <h3 id="stat-stars" class="text-primary mb-1"
-                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
-                                    <i class="fas fa-spinner fa-spin fa-sm"></i>
-                                </h3>
-                                <div class="small fw-bold text-uppercase text-muted">Repo Stars</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="p-3 border bg-light h-100">
-                                <h3 id="stat-languages" class="text-primary mb-1"
-                                    style="font-family: 'Saira Extra Condensed', sans-serif;">
-                                    4</h3>
-                                <div class="small fw-bold text-uppercase text-muted">Languages</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Featured Contributions Slider -->
-                    <div class="mb-5 position-relative">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div class="subheading mb-0 text-dark">Featured Contributions</div>
-                            <div class="opensource-navigation d-flex gap-2">
-                                <button class="opensource-prev btn px-2 py-1"
-                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
-                                        class="fas fa-chevron-left fa-sm"></i></button>
-                                <button class="opensource-next btn px-2 py-1"
-                                    style="border-radius: 0; background: #fff; border: 1px solid #e1d8d4; color: #495057;"><i
-                                        class="fas fa-chevron-right fa-sm"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="swiper opensource-swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Slide 1 (Cards 1 & 2) -->
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column gap-3">
-                                        <!-- Card 1: Spring Security -->
-                                        <div class="card border-0 rounded-0 shadow-sm"
-                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
-                                            onclick="window.open('https://github.com/spring-projects/spring-security', '_blank');">
-                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <div>
-                                                    <h5 class="card-title fw-bold mb-1"
-                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
-                                                        <a href="https://github.com/spring-projects/spring-security"
-                                                            target="_blank" class="text-decoration-none text-dark"
-                                                            onclick="event.stopPropagation();">spring-projects/spring-security</a>
-                                                    </h5>
-                                                    <p class="text-muted small mb-0"><i
-                                                            class="fas fa-star text-warning me-1"></i><span
-                                                            id="stars-spring">7k+</span> stars</p>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end gap-1">
-                                                    <span id="pr-count-spring" class="badge bg-success"
-                                                        style="border-radius: 0;">Merged</span>
-                                                    <div class="d-flex gap-1">
-                                                        <span id="issue-count-spring" class="badge"
-                                                            style="background-color: #bd5d38; border-radius: 0;">Issues</span>
-                                                        <span id="review-count-spring" class="badge bg-info text-dark"
-                                                            style="border-radius: 0;">Reviews</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-muted mb-3"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">Spring
-                                                Security is a powerful and highly customizable authentication and
-                                                access-control framework.</p>
-
-                                            <div>
-                                                <h6 class="subheading mb-1"
-                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
-                                                </h6>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Issues</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Bugfix</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Deprecated
-                                                    feature removal</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Refactoring</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Code
-                                                    Review</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 2: Flower -->
-                                        <div class="card border-0 rounded-0 shadow-sm"
-                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
-                                            onclick="window.open('https://github.com/flwrlabs/flower', '_blank');">
-                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <div>
-                                                    <h5 class="card-title fw-bold mb-1"
-                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
-                                                        <a href="https://github.com/flwrlabs/flower" target="_blank"
-                                                            class="text-decoration-none text-dark"
-                                                            onclick="event.stopPropagation();">flwrlabs/flower</a>
-                                                    </h5>
-                                                    <p class="text-muted small mb-0"><i
-                                                            class="fas fa-star text-warning me-1"></i><span
-                                                            id="stars-flower">3k+</span> stars</p>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end gap-1">
-                                                    <span id="pr-count-flower" class="badge bg-success"
-                                                        style="border-radius: 0;">Merged</span>
-                                                    <div class="d-flex gap-1">
-                                                        <span id="issue-count-flower" class="badge"
-                                                            style="background-color: #bd5d38; border-radius: 0;">Issues</span>
-                                                        <span id="review-count-flower" class="badge bg-info text-dark"
-                                                            style="border-radius: 0;">Reviews</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-muted mb-3"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">A
-                                                Friendly Federated Learning Framework.</p>
-
-                                            <div>
-                                                <h6 class="subheading mb-1"
-                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
-                                                </h6>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Issues</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Bugfix</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Guides</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 2 (Card 3) -->
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column gap-3">
-                                        <!-- Card 3: Developer Roadmap -->
-                                        <div class="card border-0 rounded-0 shadow-sm"
-                                            style="background-color: #f6f6f6; padding: 1.5rem; cursor: pointer;"
-                                            onclick="window.open('https://github.com/kamranahmedse/developer-roadmap', '_blank');">
-                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <div>
-                                                    <h5 class="card-title fw-bold mb-1"
-                                                        style="font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
-                                                        <a href="https://github.com/kamranahmedse/developer-roadmap"
-                                                            target="_blank" class="text-decoration-none text-dark"
-                                                            onclick="event.stopPropagation();">kamranahmedse/developer-roadmap</a>
-                                                    </h5>
-                                                    <p class="text-muted small mb-0"><i
-                                                            class="fas fa-star text-warning me-1"></i><span
-                                                            id="stars-roadmap">270k+</span> stars</p>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end gap-1">
-                                                    <span id="pr-count-roadmap" class="badge bg-success"
-                                                        style="border-radius: 0;">Merged</span>
-                                                    <div class="d-flex gap-1">
-                                                        <span id="issue-count-roadmap" class="badge"
-                                                            style="background-color: #bd5d38; border-radius: 0;">Documentation</span>
-                                                        <span id="review-count-roadmap" class="badge bg-info text-dark"
-                                                            style="border-radius: 0;">Reviews</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text text-muted mb-3"
-                                                style="font-family: 'Quicksand', sans-serif; font-size: 0.85rem;">
-                                                Interactive roadmaps, guides and other educational content to help
-                                                developers grow in their careers.</p>
-
-                                            <div>
-                                                <h6 class="subheading mb-1"
-                                                    style="font-size: 0.9rem; text-transform: none;">Contribution Scope:
-                                                </h6>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
-                                                <span class="badge bg-white text-dark border"
-                                                    style="border-radius: 0; font-family: 'Quicksand', sans-serif;">Guides</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skills & Activity Graph -->
-                    <div class="row mt-5">
-                        <div class="col-lg-6">
-                            <div class="subheading mb-3 text-dark">Contribution Activity</div>
-                            <div class="border p-2 bg-white shadow-sm text-center" style="border-radius: 0;">
-                                <a href="https://github.com/ronodhirSoumik" target="_blank">
-                                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ronodhirSoumik&theme=github-compact&hide_border=true"
-                                        class="img-fluid w-100" alt="GitHub Activity Graph" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="subheading mb-3 text-dark">Skills Demonstrated</div>
-                            <div class="d-flex flex-wrap gap-2 mb-4">
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Java</span>
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Python</span>
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Federated
-                                    Learning</span>
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Security</span>
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Documentation</span>
-                                <span class="badge px-3 py-2 fs-6 fw-normal"
-                                    style="background-color: #bd5d38; border-radius: 0; font-family: 'Quicksand', sans-serif;">Code
-                                    Review</span>
-                            </div>
-                            <div class="mt-4">
-                                <a href="https://github.com/ronodhirSoumik" target="_blank"
-                                    class="btn px-4 py-2 text-white"
-                                    style="background-color: #343a40; border-radius: 0; font-family: 'Saira Extra Condensed', sans-serif; font-size: 1.25rem;">
-                                    <i class="fab fa-github me-2"></i>View GitHub Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="timeline-org">
+                  <a href="https://www.sust.edu/centers/research-center" target="_blank" rel="noopener noreferrer">
+                    SUST Research Center <i class="fas fa-arrow-up-right-from-square fa-xs"></i>
+                  </a>
+                  <span class="text-muted">· SUST, Sylhet (University Grant Funded)</span>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer II</h3>
-                            <div class="subheading mb-3">Therap (BD) Ltd. <a href="https://therapbd.com/"
-                                    target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></div>
-                            <p>During my tenure at this US-based healthcare management company, I actively contributed
-                                to several major release updates, including version migration. I also designed flexible
-                                modules and data flows to accommodate the needs of third-party organizations. Throughout
-                                my time here, I developed strong teamwork, leadership, time management, collaboration,
-                                and presentation skills.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2021 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Developer and Content Designer</h3>
-                            <div class="subheading mb-3">BRAC HNPP Application Development <a
-                                    href="https://www.brac.net/program/health/" target="_blank"
-                                    rel="noopener noreferrer"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></div>
-                            <p>During my graduation, I had this incredible opportunity to participate in a notable idea
-                                hackathon where our team emerged victorious. The prize included a contract to fully
-                                develop the project for the client, which allowed me to gain valuable insights into the
-                                entire software development process. Our team successfully maintained the application
-                                for a significant portion of the user base, and we effectively communicated with the
-                                business team and gathered user feedback through field visits.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2019 - November 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Research Assistant and Developer</h3>
-                            <div class="subheading mb-3">SUST Research Center <a
-                                    href="https://www.sust.edu/centers/research-center" target="_blank"
-                                    rel="noopener noreferrer"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></div>
-                            <p>I was fortunate enough to receive funding from our university for the research and
-                                development of an innovative learning module using virtual reality technology, which was
-                                previously showcased at a hackathon. At that time, as part of the project, I developed a
-                                prototype and conducted visits to autism schools to ensure its usability. Through this
-                                experience, I gained valuable insights into research protocols and compared existing
-                                solutions in the field. Pursuing this project two years ago helped me understand how to
-                                approach problems with practical solutions while verifying them from multiple angles.
-                            </p>
-                            <p><a href="https://www.ijeat.org/wp-content/uploads/papers/v10i3/C22010210321.pdf"
-                                    target="_blank" rel="noopener noreferrer">We have published a short paper on
-                                    this</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2019 - June 2020</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Shahjalal University of Science and Technology <a
-                                    href="https://www.sust.edu/" target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div class="subheading">Computer Science & Engineering <a
-                                    href="https://www.sust.edu/department/cse" target="_blank"
-                                    rel="noopener noreferrer"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></div>
-                            <p><b>Notable Courses:</b> Discrete Mathematics, Data Structure & Algorithms,
-                                Object-Oriented Programming, Operating System, Computer Architecture, Introduction to
-                                Computer Graphics, Artificial Intelligence, Computer Security</p>
-                            <!-- <p>GPA: 0.00</p> -->
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2017 - 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Chattogram College, Chattogram</h3>
-                            <div class="subheading mb-3">Higher Secondary Certificate</div>
-                            <!-- <p>GPA: 0.00</p> -->
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2014 - 2016</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Chattogram Collegiate School, Chattogram</h3>
-                            <div class="subheading mb-3">Secondary School Certificate</div>
-                            <!-- <p>GPA: 0.00</p> -->
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2009 - 2014</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publications-->
-            <section class="resume-section" id="publications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">Word Completion and Sequence Prediction in Bangla Language
-                                Using Trie
-                                <br />and a Hybrid Approach of Sequential LSTM and N-gram
-                                <a href="https://ieeexplore.ieee.org/document/9333518" target="_blank"
-                                    rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"
-                                        title="Paper Link"></i></a>
-                                <a href="https://drive.google.com/file/d/1qval4JegiEJzpICaUwGPdF11WT8uDm0N/view"
-                                    target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-solid fa-person-chalkboard fa-xs" title="Presentation Link"></i></a>
-                            </div>
-                            <p>Soumik Sarker, Md. Ekramul Islam, Jillur Rahman Saurav, Md Mahadi Hasan Nahid
-                                <br /><b>Features:</b> Bangla, Sequence Prediction, Autocompletion, Information
-                                Extraction, Trie, N-gram, Sequence-to-sequence Model, Encoder-decoder, Bidirectional
-                                LSTM
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2<sup>nd</sup> ICAICT, (IEEE)</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">A Survey on Blockchain & Cloud Integration
-                                <a href="https://ieeexplore.ieee.org/document/9392748" target="_blank"
-                                    rel="noopener noreferrer" title="Paper Link"><i
-                                        class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
-                                <a href="https://drive.google.com/file/d/193rH5vGt73ykWNkICCv9im2YnLWytkt-/view"
-                                    target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-solid fa-person-chalkboard fa-xs" title="Presentation Link"></i></a>
 
-                            </div>
-                            <p>Soumik Sarker, Arnob Kumar Saha, Md Sadek Ferdous
-                                <br /><b>Features:</b> Blockchain, Cloud computing, Cloud service models,
-                                Blockchain-as-a-service, Blockchain-enabled Cloud
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">23<sup>rd</sup> ICECE, (IEEE)</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">Deep Learning Approach Combining Lightweight CNN Architecture
-                                with Transfer Learning:
-                                <br />An Automatic Approach for the Detection and Recognition of Bangladeshi Banknotes
-                                <a href="https://ieeexplore.ieee.org/abstract/document/9393113" target="_blank"
-                                    rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"
-                                        title="Paper Link"></i></a>
-                            </div>
-                            <p>Ali Hasan Md. Linkon, Md. Mahir Labib, Faisal Haque Bappy, Soumik Sarker, Marium-E
-                                Jannat, Md Saiful Islam
-                                <br /><b>Features:</b> Bangladeshi banknotes, Currency detection and recognition,
-                                Convolutional Neural Network, Transfer Learning
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">11<sup>th</sup> ICECE, (IEEE)</span></div>
-                    </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Proposed an interactive <strong>Virtual Reality (VR)-based module</strong> for children with Autism
+                    Spectrum Disorder (ASD), funded by the university research center.
+                  </li>
+                  <li>
+                    Researched existing VR approaches and designed an interactive prototype integrating
+                    <strong>Augmented Reality (AR) and Virtual Reality (VR)</strong>.
+                  </li>
+                  <li>
+                    Co-authored published study under supervisor <a href="https://mahadi-nahid.github.io/"
+                      target="_blank" rel="noopener noreferrer">Md Mahadi Hasan Nahid</a>:
+                    <a href="https://www.ijeat.org/wp-content/uploads/papers/v10i3/C22010210321.pdf" target="_blank"
+                      rel="noopener noreferrer" class="fw-semibold">
+                      Read Project Paper [IJEAT] <i class="fas fa-file-pdf fa-xs"></i>
+                    </a>.
+                  </li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="tech-tag">Unity3D</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Augmented Reality (AR)</span>
+                  <span class="tech-tag">Virtual Reality (VR)</span>
+                  <span class="tech-tag">HCI</span>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publications-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Thesis & Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Undergrad Thesis</h3>
-                            <div class="subheading mb-3">Security-as-a-Service: A Three-way Blockchain Based Security
-                                Service Delivery Model for the Cloud</div>
-                            <p>I aimed to design a dynamic client-modifiable blockchain-based security service in Cloud
-                                platform. Client can configure their privacy, access policies which will be backed by
-                                blockchain network. We choose File Storage, one of the cloud service where we
-                                implemented our Security Service Model.</p>
-                            <a href="https://drive.google.com/file/d/1ZmUyzxvYNpV68Tjs1kSITlJ-cCv3kJjE/view"
-                                target="_blank" rel="noopener noreferrer">Interested? Have a look on the
-                                presentation</a>
-                        </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 5: Selected Projects & Thesis
+             -------------------------------------------------------------------- -->
+        <section id="projects" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Thesis & Selected Projects</h2>
+            <span class="section-subtext">Research prototypes & software implementations</span>
+          </div>
+
+          <!-- Project Category Filter -->
+          <div class="project-filter-tabs" id="project-filters">
+            <button class="project-filter-btn active-filter" data-filter="All">All</button>
+            <button class="project-filter-btn" data-filter="Thesis">Thesis</button>
+            <button class="project-filter-btn" data-filter="Machine Learning">Machine Learning</button>
+            <button class="project-filter-btn" data-filter="Web">Web Systems</button>
+            <button class="project-filter-btn" data-filter="Tooling">Developer Tools</button>
+          </div>
+
+          <!-- Injected Container for Projects -->
+          <div id="dynamic-projects-container">
+            <!-- Featured Project Container -->
+            <div id="featured-project-container"></div>
+            <!-- Grid Projects Container -->
+            <div class="row" id="grid-projects-container"></div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 6: Open Source Contributions
+             -------------------------------------------------------------------- -->
+        <section id="opensource" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Open Source Contributions</h2>
+            <span class="section-subtext">Contributions to mainstream software & AI repositories</span>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div id="stat-prs" class="stat-num">15+</div>
+              <div class="stat-label">PRs Merged</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Upstream Projects</div>
+            </div>
+            <div class="stat-box">
+              <div id="stat-stars" class="stat-num">280k+</div>
+              <div class="stat-label">Upstream Stars</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Core Languages</div>
+            </div>
+          </div>
+
+          <!-- Contribution Cards Grid -->
+          <div class="row g-3">
+            <!-- Card 1: Spring Security -->
+            <div class="col-md-6 mb-3">
+              <div class="os-card">
+                <div class="os-card-header">
+                  <div>
+                    <h3 class="os-repo-name">
+                      <a href="https://github.com/spring-projects/spring-security" target="_blank"
+                        rel="noopener noreferrer">
+                        spring-projects / spring-security
+                      </a>
+                    </h3>
+                    <div class="os-repo-stars">
+                      <i class="fas fa-star"></i> <span id="stars-spring">8.5k+</span> stars
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Projects</h3>
-                            <p>While prosposing project plans, my strategy is to first investigate a problem, navigate a
-                                solution plan and then go for the required stacks. I did several projects on Java Swing,
-                                Andriod Studio, Laravel, Node, Solidy. I always fond of developing games. In one of my
-                                undergrad project, I created a RPG game where everything including sprites, BGM are
-                                designed by ourselves.</p>
-                            <p>Apart from these, I participated in several idea-hackathons and presentened team-winning
-                                solutions. Some of the ideas include - </p>
-                            <ul>
-                                <li>Designing a VR-based learning module for children with Autism</li>
-                                <li>Using Augmented Reality in medicine recognition and scheduling</li>
-                                <li>AI-based suggestor for health emergency</li>
-                            </ul>
-                        </div>
-                    </div>
+                  </div>
+                  <div class="os-badge-group">
+                    <span id="pr-count-spring" class="os-badge os-badge-merged">Merged: 2+</span>
+                    <span class="os-badge os-badge-review">Code Review</span>
+                  </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-android"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-unity"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-laravel"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-square-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-brands fa-linux"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Organizational Skills</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Led Design & Publication Team on several University functions
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            General Secretary, SUST ACM Student Chapter
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Executed workshops for mentorship programs
-                        </li>
-                    </ul>
+                <p class="os-desc">
+                  Spring Security is a foundational authentication, authorization, and access-control framework for the
+                  Java ecosystem.
+                </p>
+                <div class="timeline-tags mt-auto">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Security</span>
+                  <span class="tech-tag">Bugfix</span>
+                  <span class="tech-tag">Refactoring</span>
+                  <span class="tech-tag">Unit Tests</span>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+              </div>
+            </div>
 
-                    <div class="mb-4">
-                        <h3 class="mb-0">Awards</h3>
-
-                        <ul class="fa-ul mb-0">
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                BRACATHON 3.0 - WINNER (Team Nrick)
-                                <br />
-                                A digitalized learning approach for the trainees of <a href="https://www.brac.net/"
-                                    target="_blank" rel="noopener noreferrer">BRAC</a>.
-                            </li>
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                SUST TechFest 2019 - WINNER (Team Nrick)
-                                <br />
-                                A learning module for the betterment of people with Autism.
-                            </li>
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                IUT 10th ICT Fest - 1st RUNNERS-UP (Team Nrick)
-                                <br />
-                                AI module for patients to seek the right doctors or emergency help.
-                            </li>
-                        </ul>
+            <!-- Card 2: Flower Labs -->
+            <div class="col-md-6 mb-3">
+              <div class="os-card">
+                <div class="os-card-header">
+                  <div>
+                    <h3 class="os-repo-name">
+                      <a href="https://github.com/flwrlabs/flower" target="_blank" rel="noopener noreferrer">
+                        flwrlabs / flower
+                      </a>
+                    </h3>
+                    <div class="os-repo-stars">
+                      <i class="fas fa-star"></i> <span id="stars-flower">4.2k+</span> stars
                     </div>
-
-                    <div class="mb-4">
-                        <h3 class="mb-0">Certifications</h3>
-
-                        <ul class="fa-ul mb-0">
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-graduation-cap text-warning"></i></span>
-                                <a href="https://www.coursera.org/account/accomplishments/specialization/2GMET98JY3K6"
-                                    target="_blank" rel="noopener noreferrer">AWS Fundamentals</a> - Coursera
-                                specialization
-                                <br />
-                                This comprises four courses related to Cloud Environment Introduction, Data management,
-                                migration and Security with Serverless Architecture, specifically in AWS platform.
-                            </li>
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-graduation-cap text-warning"></i></span>
-                                <a href="https://www.coursera.org/account/accomplishments/specialization/7TBVQKBYEA3K"
-                                    target="_blank" rel="noopener noreferrer">Blockchain</a> - Coursera specialization
-                                <br />
-                                I found this specialization really helpful to my blockchain learning and thesis work
-                                preparation. This shares fundamental concepts of blockcahin, cryptography and introduces
-                                with different types of blockchain network.
-                            </li>
-                            <li class="mb-2">
-                                <span class="fa-li"><i class="fas fa-graduation-cap text-warning"></i></span>
-                                <a href="https://www.coursera.org/account/accomplishments/specialization/HQMJYGXN635C"
-                                    target="_blank" rel="noopener noreferrer">Deep Learning</a> - Coursera
-                                specialization
-                                <br />
-                                This specialization consists of five courses, starting with basics of neural networks to
-                                advanced deep learning models.
-                            </li>
-                        </ul>
-                    </div>
+                  </div>
+                  <div class="os-badge-group">
+                    <span id="pr-count-flower" class="os-badge os-badge-merged">Merged: 3+</span>
+                    <span class="os-badge os-badge-issue">Docs & Guides</span>
+                  </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!---Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-
-                    <div class="subheading mb-3">Music</div>
-                    <p>I love to explore and taste music of different genres. Some of my favourite genres are Indian
-                        Classical, Irish Instrumental, Pop, Rock. I am novice "pianist" and "guiterist".
-                        <br>Apart from these, my collection of instruments- Sarangi (Nepali String instrument), Violin,
-                        Flute and some native instruments like Khamak, Kartal.
-                    </p>
-
-                    <p>I have also curated several playlists based on seperate modes and interests. Check my Spoity
-                        profile!!</p>
-                    <div class="social-icons">
-                        <a class="social-icon"
-                            href="https://open.spotify.com/user/o8spgcazaiyvlaaxiux5xoyq3?si=RP6mUBoNQbGxXGjhwVu5dw"
-                            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
-                    </div>
-                    <hr />
-
-                    <div class="subheading mb-3">Travelling</div>
-                    <p>Apart from being a software developer, I enjoy most of my time being outdoors. I love trekking a
-                        lot. I covered most of the hilly areas of my country, Bangladesh. I also travelled several
-                        places of India and Nepal like Meghalaya, Sandakphu, Mukthinath. Still a lot more to go. </p>
-                    <p>WISH ME GOOD LUCK!!</p>
-                    <!-- <ul id="instrumentList" class="fa-ul mb-0"></ul> -->
+                <p class="os-desc">
+                  A friendly federated learning and decentralized AI orchestration framework used by global AI
+                  researchers.
+                </p>
+                <div class="timeline-tags mt-auto">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Federated Learning</span>
+                  <span class="tech-tag">Tutorials</span>
+                  <span class="tech-tag">Community</span>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Footer -->
-            <footer class="footer-section text-center py-4 bg-light">
-                <div class="container-fluid">
-                    <p class="mb-0">
-                        © 2025 Soumik Sarker, Designed with <a href="https://themewagon.com/" target="_blank"
-                            rel="noopener noreferrer">ThemeWagon Inc. Templates.</a>
-                        <br>Site last updated 2026-02-25
-                    </p>
-                </div>
-            </footer>
-            <!----Trip-->
-            <!-- <section class="resume-slider-section" id="trips">
-                    <h2 class="mb-5">Trip</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">I have curated several playlists based on seperate modes and interests. Check my Spoity profile.</p>
-    
-                    <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="image-holder">
-                              <a href="single-portfolio.html" title="portfolio details"><img src="assets/img/port-item1.jpg" alt="portfolio" class="img-fluid"/></a>
-                            </div>
-                            <div class="caption d-flex justify-content-between align-items-center">
-                              <div class="title">nostaligia portrait copy</div>
-                              <a href="#" class="image-format bg-orange">svg</a>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image-holder">
-                              <a href="single-portfolio.html" title="portfolio details"><img src="assets/img/port-item1.jpg" alt="portfolio" class="img-fluid"></img></a>
-                            </div>
-                            <div class="caption d-flex justify-content-between align-items-center">
-                              <div class="title">Workoholic city design</div>
-                              <a href="#" class="image-format bg-orange">svg</a>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image-holder">
-                              <a href="single-portfolio.html" title="portfolio details"><img src="assets/img/port-item1.jpg" alt="portfolio" class="img-fluid"></img></a>
-                            </div>
-                            <div class="caption d-flex justify-content-between align-items-center">
-                              <div class="title">Zoo keeper envelope</div>
-                              <a href="#" class="image-format bg-blue">psd</a>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image-holder">
-                              <a href="single-portfolio.html" title="portfolio details"><img src="assets/img/port-item1.jpg" alt="portfolio" class="img-fluid"></img></a>
-                            </div>
-                            <div class="caption d-flex justify-content-between align-items-center">
-                              <div class="title">nostaligia portrait</div>
-                              <a href="#" class="image-format bg-blue">png</a>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image-holder">
-                              <a href="single-portfolio.html" title="portfolio details"><img src="assets/img/port-item1.jpg" alt="portfolio" class="img-fluid"></img></a>
-                            </div>
-                            <div class="caption d-flex justify-content-between align-items-center">
-                              <div class="title">nostaligia portrait copy</div>
-                              <a href="#" class="image-format">svg</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination mt-5"></div>
+              </div>
+            </div>
+
+            <!-- Card 3: Developer Roadmap -->
+            <div class="col-12">
+              <div class="os-card">
+                <div class="os-card-header">
+                  <div>
+                    <h3 class="os-repo-name">
+                      <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank"
+                        rel="noopener noreferrer">
+                        kamranahmedse / developer-roadmap
+                      </a>
+                    </h3>
+                    <div class="os-repo-stars">
+                      <i class="fas fa-star"></i> <span id="stars-roadmap">290k+</span> stars
                     </div>
-                </section> -->
-        </div>
+                  </div>
+                  <div class="os-badge-group">
+                    <span id="pr-count-roadmap" class="os-badge os-badge-merged">Merged: 2+</span>
+                    <span class="os-badge os-badge-issue">Curriculum</span>
+                  </div>
+                </div>
+                <p class="os-desc">
+                  Industry standard visual roadmaps, study guides, and educational resources guiding developers through
+                  modern software careers.
+                </p>
+                <div class="timeline-tags mt-auto">
+                  <span class="tech-tag">Curriculum Guides</span>
+                  <span class="tech-tag">Documentation</span>
+                  <span class="tech-tag">Computer Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------------------
+             Section 7: Education
+             -------------------------------------------------------------------- -->
+        <section id="education" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Education</h2>
+            <span class="section-subtext">Academic background & qualifications</span>
+          </div>
+
+          <div class="academic-timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3 class="timeline-role">Bachelor of Science in Computer Science & Engineering</h3>
+                  <span class="timeline-date-badge">2017 — 2021</span>
+                </div>
+                <div class="timeline-org">
+                  <a href="https://www.sust.edu/" target="_blank" rel="noopener noreferrer">
+                    Shahjalal University of Science and Technology (SUST) <i
+                      class="fas fa-arrow-up-right-from-square fa-xs"></i>
+                  </a>
+                  <span class="text-muted">· Sylhet, Bangladesh</span>
+                </div>
+
+                <p class="hero-bio-text mb-3">
+                  Completed an intensive 4-year curriculum focusing on computer systems, theoretical computing, software
+                  architecture,
+                  and applied artificial intelligence. Active in ACM student chapter and research grant projects.
+                </p>
+
+                <div class="mb-3">
+                  <strong class="d-block mb-2" style="font-size: 0.85rem; color: var(--text-primary);">Notable
+                    Coursework:</strong>
+                  <div class="timeline-tags">
+                    <span class="tech-tag">Data Structures & Algorithms</span>
+                    <span class="tech-tag">Operating Systems</span>
+                    <span class="tech-tag">Computer Architecture</span>
+                    <span class="tech-tag">Discrete Mathematics</span>
+                    <span class="tech-tag">Computer & Network Security</span>
+                    <span class="tech-tag">Artificial Intelligence</span>
+                    <span class="tech-tag">Database Management Systems</span>
+                    <span class="tech-tag">Object-Oriented Programming</span>
+                    <span class="tech-tag">Computer Graphics</span>
+                  </div>
+                </div>
+
+                <div class="pt-2 border-top">
+                  <span class="text-muted small">Undergraduate Thesis:</span>
+                  <a href="#projects" class="small fw-semibold ms-1">
+                    Security-as-a-Service: A Three-way Blockchain-Based Security Service Delivery Model for the Cloud
+                    &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- [Skills section: hidden via CSS #skills { display:none } — code preserved below] -->
+        <section id="skills" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Technical Skills</h2>
+            <span class="section-subtext">Categorized technical expertise & toolchains</span>
+          </div>
+
+          <div class="skills-category-grid">
+            <!-- Group 1: Programming Languages -->
+            <div class="skill-category-card">
+              <h3 class="skill-cat-title">
+                <i class="fas fa-code text-accent"></i> Programming Languages
+              </h3>
+              <div class="skill-items-wrap">
+                <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+                <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-badge"><i class="fas fa-code"></i> TypeScript</span>
+                <span class="skill-badge"><i class="fas fa-cubes"></i> C / C++</span>
+                <span class="skill-badge"><i class="fas fa-link"></i> Solidity</span>
+                <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+              </div>
+            </div>
+
+            <!-- Group 2: Frameworks & Libraries -->
+            <div class="skill-category-card">
+              <h3 class="skill-cat-title">
+                <i class="fas fa-layer-group text-accent"></i> Frameworks & Libraries
+              </h3>
+              <div class="skill-items-wrap">
+                <span class="skill-badge"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="skill-badge"><i class="fas fa-database"></i> Hibernate / JPA</span>
+                <span class="skill-badge"><i class="fab fa-react"></i> React.js</span>
+                <span class="skill-badge"><i class="fas fa-bolt"></i> FastAPI</span>
+                <span class="skill-badge"><i class="fas fa-network-wired"></i> Flower (FL)</span>
+                <span class="skill-badge"><i class="fas fa-brain"></i> PyTorch</span>
+                <span class="skill-badge"><i class="fab fa-android"></i> Android SDK</span>
+                <span class="skill-badge"><i class="fab fa-laravel"></i> Laravel</span>
+              </div>
+            </div>
+
+            <!-- Group 3: Systems, Blockchain & Security -->
+            <div class="skill-category-card">
+              <h3 class="skill-cat-title">
+                <i class="fas fa-shield-halved text-accent"></i> Systems, Blockchain & Security
+              </h3>
+              <div class="skill-items-wrap">
+                <span class="skill-badge"><i class="fas fa-link"></i> Smart Contracts</span>
+                <span class="skill-badge"><i class="fas fa-lock"></i> Cryptography</span>
+                <span class="skill-badge"><i class="fas fa-cubes"></i> Ethereum / EVM</span>
+                <span class="skill-badge"><i class="fas fa-share-nodes"></i> Federated Learning</span>
+                <span class="skill-badge"><i class="fas fa-user-shield"></i> Access Control Models</span>
+                <span class="skill-badge"><i class="fas fa-server"></i> Cloud Security & BaaS</span>
+                <span class="skill-badge"><i class="fas fa-hard-drive"></i> IPFS Decentralized Storage</span>
+              </div>
+            </div>
+
+            <!-- Group 4: DevOps, Cloud & Development Tools -->
+            <div class="skill-category-card">
+              <h3 class="skill-cat-title">
+                <i class="fas fa-screwdriver-wrench text-accent"></i> DevOps & Platforms
+              </h3>
+              <div class="skill-items-wrap">
+                <span class="skill-badge"><i class="fab fa-docker"></i> Docker</span>
+                <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                <span class="skill-badge"><i class="fab fa-linux"></i> Linux / Bash</span>
+                <span class="skill-badge"><i class="fab fa-aws"></i> AWS Fundamentals</span>
+                <span class="skill-badge"><i class="fas fa-database"></i> Oracle DB</span>
+                <span class="skill-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="skill-badge"><i class="fas fa-vial"></i> JUnit & Test Automation</span>
+                <span class="skill-badge"><i class="fab fa-npm"></i> npm / Vite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Organizational Leadership -->
+          <div class="mt-4 p-3 border rounded bg-surface" style="background-color: var(--bg-surface);">
+            <h4 class="academic-heading mb-2" style="font-size: 1.05rem;">
+              <i class="fas fa-users-gear text-accent me-1"></i> Academic Leadership & Mentorship
+            </h4>
+            <div class="row g-2">
+              <div class="col-md-4 small text-secondary">
+                <i class="fas fa-check-circle text-accent me-1"></i> <strong>General Secretary:</strong> SUST ACM
+                Student Chapter
+              </div>
+              <div class="col-md-4 small text-secondary">
+                <i class="fas fa-check-circle text-accent me-1"></i> <strong>Lead:</strong> Design & Publication Team
+                for University Events
+              </div>
+              <div class="col-md-4 small text-secondary">
+                <i class="fas fa-check-circle text-accent me-1"></i> <strong>Mentor:</strong> Executed competitive
+                programming & coding workshops
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- [Awards section: hidden via CSS #awards { display:none } — code preserved below] -->
+        <section id="awards" class="content-section">
+          <div class="section-header-row">
+            <h2 class="section-title">Awards & Certifications</h2>
+            <span class="section-subtext">Competitive achievements & verified credentials</span>
+          </div>
+
+          <!-- Awards -->
+          <h3 class="academic-heading mb-3" style="font-size: 1.25rem;">Honors & Hackathon Awards</h3>
+          <div class="awards-list">
+            <div class="award-item">
+              <div class="award-icon-box">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">BRACATHON 3.0 — National Champion (Winner)</h4>
+                  <span class="award-year">2019</span>
+                </div>
+                <p class="award-desc">
+                  Team Nrick. Won 1st place among nationwide collegiate and industry competitors for building a
+                  digitalized training platform for <a href="https://www.brac.net/" target="_blank"
+                    rel="noopener noreferrer">BRAC</a>, which resulted in a commercial development contract.
+                </p>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon-box">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">SUST TechFest 2019 — Winner</h4>
+                  <span class="award-year">2019</span>
+                </div>
+                <p class="award-desc">
+                  Team Nrick. Champion project designing a virtual-reality interactive learning module specifically
+                  tailored for children and trainees on the autism spectrum.
+                </p>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon-box">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">IUT 10th ICT Fest — 1st Runners-Up</h4>
+                  <span class="award-year">2019</span>
+                </div>
+                <p class="award-desc">
+                  Team Nrick. Developed an intelligent patient-triage AI algorithm connecting clinical symptoms with
+                  emergency medical assistance and on-call physicians.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <h3 class="academic-heading mb-3" style="font-size: 1.25rem;">Professional Certifications</h3>
+          <div class="awards-list">
+            <div class="award-item">
+              <div class="award-icon-box cert-icon-box">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/2GMET98JY3K6"
+                      target="_blank" rel="noopener noreferrer">
+                      AWS Fundamentals Specialization <i class="fas fa-arrow-up-right-from-square fa-2xs"></i>
+                    </a>
+                  </h4>
+                  <span class="award-year">Amazon Web Services · Coursera</span>
+                </div>
+                <p class="award-desc">
+                  Four-course specialization covering Cloud Introduction, Data Management, Migration Strategies, and
+                  Serverless Security Architecture on AWS.
+                </p>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon-box cert-icon-box">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/7TBVQKBYEA3K"
+                      target="_blank" rel="noopener noreferrer">
+                      Blockchain Specialization <i class="fas fa-arrow-up-right-from-square fa-2xs"></i>
+                    </a>
+                  </h4>
+                  <span class="award-year">University at Buffalo · Coursera</span>
+                </div>
+                <p class="award-desc">
+                  In-depth curriculum spanning blockchain fundamentals, cryptographic primitives, smart contract design,
+                  and decentralized applications (DApps).
+                </p>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <div class="award-icon-box cert-icon-box">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="award-details">
+                <div class="award-title-row">
+                  <h4 class="award-title">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/HQMJYGXN635C"
+                      target="_blank" rel="noopener noreferrer">
+                      Deep Learning Specialization <i class="fas fa-arrow-up-right-from-square fa-2xs"></i>
+                    </a>
+                  </h4>
+                  <span class="award-year">DeepLearning.AI · Coursera</span>
+                </div>
+                <p class="award-desc">
+                  Five-course specialization mastering neural network architectures, hyperparameter tuning,
+                  convolutional networks (CNNs), and sequential models.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
     </div>
-    <!-- Recents Modal -->
-    <div class="modal fade" id="recentsModal" tabindex="-1" aria-labelledby="recentsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content border-0 shadow-lg" style="border-radius: 8px; overflow: hidden;">
-                <div class="modal-header border-0 pb-0 position-absolute w-100 z-3" style="top:0; right:0;">
-                    <div class="d-flex justify-content-end w-100 pt-1 pe-1">
-                        <button type="button" class="btn-close bg-white bg-opacity-75 rounded-circle p-2"
-                            data-bs-dismiss="modal" aria-label="Close"
-                            style="box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></button>
-                    </div>
-                </div>
-                <!-- Dynamic Title -->
-                <div class="modal-body p-0 position-relative" id="recentsModalBody"
-                    style="background: #000; min-height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                    <!-- Dynamic content injected here -->
-                </div>
-            </div>
-        </div>
+  </div>
+
+  <!-- ==========================================================================
+       Academic Footer
+       ========================================================================== -->
+  <footer class="academic-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; 2026 Soumik Sarker. Academic & Professional Portfolio.
+      </p>
+      <div class="footer-meta">
+        <span>Built with clean academic typography and responsive standards.</span>
+        <span class="ms-2">·</span>
+        <span class="ms-2">Last updated: September 2026</span>
+      </div>
     </div>
+  </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- ==========================================================================
+       Floating Back-to-Top Button
+       ========================================================================== -->
+  <button id="back-to-top" class="back-to-top" type="button" title="Back to Top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!---Items Scripts-->
-    <!-- <script src="js/listItems/instruments.js"></script> -->
+  <!-- ==========================================================================
+       Toast Alert Notification (BibTeX copy)
+       ========================================================================== -->
+  <div id="academic-toast" class="academic-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <i class="fas fa-circle-check text-green"></i>
+    <span class="toast-msg">BibTeX copied to clipboard!</span>
+  </div>
+
+  <!-- ==========================================================================
+       Media Preview Modal (Recent Talks / Demos)
+       ========================================================================== -->
+  <div class="modal fade" id="recentsModal" tabindex="-1" aria-labelledby="recentsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg"
+        style="border-radius: 12px; overflow: hidden; background: var(--bg-surface);">
+        <div class="modal-header border-0 pb-0 position-absolute w-100" style="top: 0; right: 0; z-index: 1055;">
+          <div class="d-flex justify-content-end w-100 pt-2 pe-2">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              style="background-color: var(--bg-surface); padding: 0.6rem; border-radius: 50%; box-shadow: var(--shadow-md); opacity: 0.9;"></button>
+          </div>
+        </div>
+        <div class="modal-body p-0 position-relative" id="recentsModalBody"
+          style="min-height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+          <!-- Content dynamically injected via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS & Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Main Academic Scripts -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

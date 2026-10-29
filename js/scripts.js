@@ -346,6 +346,19 @@ document.addEventListener('DOMContentLoaded', () => {
       stats: "⭐ Undergraduate Research Thesis &nbsp;·&nbsp; SUST Department of CSE"
     },
     {
+      title: "HIVE FL",
+      description: "Train smarter AI models together — without sharing your data. Anyone can deploy this and use for community-based model training",
+      type: "Federated learning",
+      category: "Machine Learning, Community-based Model Training",
+      badgeClass: "badge-ml",
+      icon: "fas fa-robot",
+      tech: ["Python", "JavaScript", "Shell", "Dockerfile"],
+      links: [
+        { text: "Hackoctober 2026 Post", url: "https://dev.to/soumik_sarker/hive-train-smarter-ai-models-together-3ndc", icon: "fas fa-arrow-up-right-from-square" },
+        { text: "GitHub", url: "https://github.com/ronodhirSoumik/hive-fl", icon: "fab fa-github" }
+      ]
+    },
+    {
       title: "Agentic Research Paper Crawler",
       description: "Autonomous agentic tool capable of interpreting natural language research queries, orchestrating multi-step searches across Google Scholar and arXiv, and synthesizing structured literature summaries.",
       type: "Machine learning",
@@ -370,55 +383,56 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "AI Summit Presentation", url: "resources/files/FedAgent_Presentation[FlowerAISummit2026].mp4", icon: "fas fa-video" },
         { text: "Upstream Flower", url: "https://github.com/flwrlabs/flower", icon: "fab fa-github" }
       ]
-    },
-    {
-      title: "Bengali Sentiment Analysis REST API",
-      description: "High-throughput REST API classifying social media text and consumer reviews in Bengali into nuanced polarity categories utilizing fine-tuned Transformer models.",
-      type: "Machine learning",
-      category: "Machine Learning",
-      badgeClass: "badge-ml",
-      icon: "fas fa-language",
-      tech: ["Python", "FastAPI", "HuggingFace Transformers", "Docker"],
-      links: [
-        { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
-      ]
-    },
-    {
-      title: "Student Academic Result & Progression Portal",
-      description: "Full-stack university portal designed for students and administrators to track semester results, calculate real-time GPA progression, and manage academic transcripts with role-based security.",
-      type: "Web",
-      category: "Web",
-      badgeClass: "badge-web",
-      icon: "fas fa-graduation-cap",
-      tech: ["React", "Node.js", "PostgreSQL", "REST APIs"],
-      links: [
-        { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
-      ]
-    },
-    {
-      title: "Interactive Data Explorer & Visualizer",
-      description: "Client-side exploratory data analysis tool providing instant correlation heatmaps, multi-dimensional distribution plots, and descriptive metrics without backend upload requirements.",
-      type: "Tooling",
-      category: "Tooling",
-      badgeClass: "badge-tool",
-      icon: "fas fa-chart-pie",
-      tech: ["TypeScript", "D3.js", "HTML5 Canvas", "Vite"],
-      links: [
-        { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
-      ]
-    },
-    {
-      title: "2D RPG Game Engine Architecture",
-      description: "Custom Java-based 2D gaming engine featuring custom sprite rendering loops, AABB collision detection systems, audio mixing pipelines, and entity-component architecture.",
-      type: "Tooling",
-      category: "Tooling",
-      badgeClass: "badge-tool",
-      icon: "fas fa-gamepad",
-      tech: ["Java", "Swing/AWT", "Object-Oriented Design", "Multithreading"],
-      links: [
-        { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
-      ]
     }
+    //,
+    // {
+    //   title: "Bengali Sentiment Analysis REST API",
+    //   description: "High-throughput REST API classifying social media text and consumer reviews in Bengali into nuanced polarity categories utilizing fine-tuned Transformer models.",
+    //   type: "Machine learning",
+    //   category: "Machine Learning",
+    //   badgeClass: "badge-ml",
+    //   icon: "fas fa-language",
+    //   tech: ["Python", "FastAPI", "HuggingFace Transformers", "Docker"],
+    //   links: [
+    //     { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
+    //   ]
+    // },
+    // {
+    //   title: "Student Academic Result & Progression Portal",
+    //   description: "Full-stack university portal designed for students and administrators to track semester results, calculate real-time GPA progression, and manage academic transcripts with role-based security.",
+    //   type: "Web",
+    //   category: "Web",
+    //   badgeClass: "badge-web",
+    //   icon: "fas fa-graduation-cap",
+    //   tech: ["React", "Node.js", "PostgreSQL", "REST APIs"],
+    //   links: [
+    //     { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
+    //   ]
+    // },
+    // {
+    //   title: "Interactive Data Explorer & Visualizer",
+    //   description: "Client-side exploratory data analysis tool providing instant correlation heatmaps, multi-dimensional distribution plots, and descriptive metrics without backend upload requirements.",
+    //   type: "Tooling",
+    //   category: "Tooling",
+    //   badgeClass: "badge-tool",
+    //   icon: "fas fa-chart-pie",
+    //   tech: ["TypeScript", "D3.js", "HTML5 Canvas", "Vite"],
+    //   links: [
+    //     { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
+    //   ]
+    // },
+    // {
+    //   title: "2D RPG Game Engine Architecture",
+    //   description: "Custom Java-based 2D gaming engine featuring custom sprite rendering loops, AABB collision detection systems, audio mixing pipelines, and entity-component architecture.",
+    //   type: "Tooling",
+    //   category: "Tooling",
+    //   badgeClass: "badge-tool",
+    //   icon: "fas fa-gamepad",
+    //   tech: ["Java", "Swing/AWT", "Object-Oriented Design", "Multithreading"],
+    //   links: [
+    //     { text: "GitHub", url: "https://github.com/ronodhirSoumik", icon: "fab fa-github" }
+    //   ]
+    // }
   ];
 
   const featuredContainer = document.getElementById('featured-project-container');
